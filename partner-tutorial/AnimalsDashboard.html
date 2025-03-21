@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Animal Information</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Animal Information</h1>
+    <div id="animal-table"></div>
+
+    <script>
+        let tableHTML = '<table>';
+        // tableHTML += '<tr><th>Animal ID</th><th>Animal Name</th><th>Owner Name</th><th>Weight</th><th>Age</th></tr>';
+        tableHTML += `
+            <tr>
+                <th>Animal ID</th>
+                <th>Animal Name</th>
+                <th>Owner Name</th>
+                <th>Weight</th>
+                <th>Age</th>
+            </tr>
+        `;
+
+        const animals = [
+            { id: 1, name: 'Fluffy', owner: 'Alice', weight: 12, age: 3 },
+            { id: 2, name: 'Max', owner: 'Bob', weight: 20, age: 5 },
+        ];
+
+        for (let index = 0; index < animals.length; index++) {
+            const animal = animals[index];
+        }
+
+        tableHTML += '</table>';
+        document.getElementById('animal-table').innerHTML = tableHTML;
+
+        for (let index = 0; index < countries.length; index++) {
+            const country = countries[index];
+            country.name = 'Updated name';
+        }
+
+        let items = [
+            {
+                name: 'Gas',
+                price: 50,
+                quantity: 3.4,
+            },
+            {
+                name: 'Oil',
+                price: 250,
+                quantity: 3,
+            },
+        ];
+        items.forEach(item => {
+            item.cost = item.price * item.quantity;
+        });
+        console.log(items);
+        
+        let students = new Map();
+        students.set
+
+
+    </script>
+</body>
+
+</html>
